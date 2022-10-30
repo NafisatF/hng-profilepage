@@ -1,21 +1,29 @@
 .App {
   text-align: center;
-  max-width: 800px;
-  margin: auto 20px;
-  padding: 20px 0;
+
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.profile_container {
+  width: 100%;
+}
 .profile_pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
+
 .link_section div {
-  background-color: lightgray;
+  background-color: #eaecf0;
   margin-bottom: 20px;
   padding: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 8px;
 }
 .link_section div:hover {
   transform: scale(1.02);
@@ -25,4 +33,39 @@ a {
   text-decoration: none;
   color: black;
   padding: 0 10%;
+}
+
+.personal_links {
+  display: flex;
+  justify-content: center;
+}
+.personal_links a {
+  padding: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.footer p {
+  color: gray;
+  font-size: 10px;
+}
+.footer img {
+  width: 110px;
+  height: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer p {
+    text-align: left;
+  }
+  .footer img {
+    height: 20px;
+  }
 }
