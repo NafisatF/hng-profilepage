@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <img alt="icon-logo" src={zuri} />
-      <p>HNGInternship 9 Frontend task</p>
+      <p>HNG Internship 9 Frontend task</p>
       <img alt="icon-logo" src={i4g} />
     </div>
   );
